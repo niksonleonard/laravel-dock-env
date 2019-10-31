@@ -1,0 +1,32 @@
+{
+    "name": "i9dea/laravel-docker-env",
+    "description": "Docker environment as Laravel package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nikson Leonard Ferraz",
+            "email": "niksonleonard@i9dea.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.1.3",
+        "illuminate/support": "~5.8|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "i9dea\\DockerEnv\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "i9dea\\DockerEnv\\DockerEnvServiceProvider"
+            ]
+        }
+    }
+}
