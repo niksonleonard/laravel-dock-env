@@ -3,10 +3,9 @@
 namespace i9dea\DockerEnv;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Contracts\Support\DeferrableProvider;
 
 
-class DockerEnvServiceProvider extends ServiceProvider implements DeferrableProvider
+class DockerEnvServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
@@ -17,6 +16,6 @@ class DockerEnvServiceProvider extends ServiceProvider implements DeferrableProv
     {
         $this->publishes([
             __DIR__.'/../docker-compose.yml' => base_path('docker-compose.yml'),
-        ]);
+        ], 'laravel-docker-env');
     }
 }

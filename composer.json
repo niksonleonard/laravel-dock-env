@@ -2,6 +2,7 @@
     "name": "i9dea/laravel-docker-env",
     "description": "Docker environment as Laravel package",
     "license": "MIT",
+    "type": "library",
     "authors": [
         {
             "name": "Nikson Leonard Ferraz",
@@ -20,9 +21,6 @@
         }
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "1.x-dev"
-        },
         "laravel": {
             "providers": [
                 "i9dea\\DockerEnv\\DockerEnvServiceProvider"
