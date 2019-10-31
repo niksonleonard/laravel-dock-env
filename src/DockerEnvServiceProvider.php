@@ -16,7 +16,7 @@ class DockerEnvServiceProvider extends ServiceProvider implements DeferrableProv
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/docker-compose.yml' => base_path('docker-compose.yml'),
+            __DIR__.'/../docker-compose.yml' => base_path('docker-compose.yml'),
         ]);
     }
 }
